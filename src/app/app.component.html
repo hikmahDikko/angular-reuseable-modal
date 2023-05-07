@@ -1,0 +1,10 @@
+<button class="btn btn-lg btn-outline-primary" (click)="open()">
+  Launch Confirmation Modal
+</button>
+
+<app-generic-modal #genericModal (newgenericEvent)="getGenericValue($event)" [modalStyle]="modalStyle"
+[modalTitle]="modalTitle" 
+[modalBody]="modalBody"
+[modalButtonColor]="modalButtonColor"
+>
+</app-generic-modal>
